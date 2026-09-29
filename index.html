@@ -6,142 +6,76 @@
 
   <title>Ali Bali Trans | Bali Tour & Transportation</title>
 
-.service-button {
-  display: inline-block !important;
-  background: #25D366 !important;
-  color: white !important;
-  padding: 12px 25px !important;
-  margin-top: 15px !important;
-  border-radius: 30px !important;
-  text-decoration: none !important;
-  font-weight: bold !important;
-}  <style>.card img {
- .service-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 24px;
-  background: #25D366;
-  color: white !important;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: 15px;
-} width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 18px;
-}
+  <style>
 
- { position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 18px 6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0,0,0,0.75);
-  z-index: 1000;
-}
-
-.logo {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.menu {
-  display: flex;
-  gap: 25px;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.menu a:hover {
-  color: #25D366;
-}
-
-@media (max-width: 600px) {
-  nav {
-    padding: 15px 20px;
-  }
-
-  .logo {
-    font-size: 16px;
-  }
-
-  .menu {
-    gap: 10px;
-  }
-
-  .menu a {
-    font-size: 12px;
-  }
-}
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    body {
       font-family: Arial, sans-serif;
-    }
-
-    body<nav>
-  <div class="logo">ALI BALI TRANS</div>
-
-  <div class="menu">
-   <div class="services">
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80">
-    <h3>🚐 Private Tour</h3>
-    <p><a href="https://wa.me/6285735531291" style="display:inline-block;background:#25D366;color:white;padding:12px 25px;margin-top:15px;border-radius:30px;text-decoration:none;font-weight:bold;">BOOK NOW</a>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80">
-    <h3>✈️ Airport Transfer</h3>
-    <p><a class="service-button" href="https://wa.me/6285735531291">Book Now</a>.</p>
-    <a class="service-button" href="https://wa.me/6285735531291">Book Now</a>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80">
-    <h3>🌴 Bali Tours</h3>
-    <p><a class="service-button" href="https://wa.me/6285735531291">Book Now</a>.</p>
-    <a class="service-button" href="https://wa.me/6285735531291">Book Now</a>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80">
-    <h3>🚗 Car Rental</h3>
-    <p><a class="service-button" href="https://wa.me/6285735531291">Book Now</a>.</p>
-    <a class="service-button" href="https://wa.me/6285735531291">Book Now</a>
-  </div>
-
-</div> 
-</nav> {
-      background: #f7f7f7;
+      background: #f5f5f5;
       color: #222;
+      line-height: 1.6;
     }
+
+    /* NAVIGATION */
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 18px 6%;
+
+      background: rgba(0,0,0,0.75);
+    }
+
+    .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .menu {
+      display: flex;
+      gap: 22px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* HERO */
 
     .hero {
       min-height: 100vh;
+
       background:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
         url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=80");
+
       background-size: cover;
       background-position: center;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       text-align: center;
       color: white;
+
       padding: 30px;
     }
 
@@ -156,40 +90,48 @@
     }
 
     .hero p {
-      font-size: 21px;
+      font-size: 20px;
       margin-bottom: 30px;
     }
 
-    .button {
+    .whatsapp-button {
       display: inline-block;
+
       background: #25D366;
       color: white;
+
       padding: 15px 30px;
+
       border-radius: 30px;
+
       text-decoration: none;
-      font-size: 18px;
       font-weight: bold;
+      font-size: 17px;
     }
+
+    /* GENERAL SECTION */
 
     section {
-      padding: 70px 20px;
       max-width: 1100px;
       margin: auto;
+      padding: 70px 20px;
     }
 
-    .title {
+    .section-title {
       text-align: center;
       margin-bottom: 40px;
     }
 
-    .title h2 {
+    .section-title h2 {
       font-size: 35px;
       margin-bottom: 10px;
     }
 
-    .title p {
+    .section-title p {
       color: #666;
     }
+
+    /* SERVICES */
 
     .services {
       display: grid;
@@ -199,30 +141,55 @@
 
     .card {
       background: white;
-      padding: 30px 20px;
       border-radius: 15px;
-      text-align: center;
+      overflow: hidden;
+
       box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+      padding-bottom: 25px;
+
+      text-align: center;
     }
 
-    .card .icon {
-      font-size: 45px;
-      margin-bottom: 15px;
+    .card img {
+      width: 100%;
+      height: 180px;
+
+      object-fit: cover;
+      display: block;
     }
 
     .card h3 {
-      margin-bottom: 10px;
+      font-size: 20px;
+      margin: 20px 15px 10px;
     }
 
     .card p {
       color: #666;
-      line-height: 1.5;
+      padding: 0 18px;
+      margin-bottom: 20px;
     }
 
-    .tour {
+    .book-button {
+      display: inline-block;
+
+      background: #25D366;
+      color: white;
+
+      padding: 10px 22px;
+
+      border-radius: 25px;
+
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* UBUD TOUR */
+
+    .tour-section {
+      max-width: none;
       background: #0f5132;
       color: white;
-      max-width: none;
     }
 
     .tour-content {
@@ -230,21 +197,36 @@
       margin: auto;
     }
 
-    .tour-box {
-      background: white;
-      color: #222;
-      border-radius: 15px;
-      padding: 25px;
-      margin-top: 20px;
+    .tour-section .section-title p {
+      color: #ddd;
     }
 
-    .tour-box h3 {
+    .tour-card {
+      background: white;
+      color: #222;
+
+      border-radius: 15px;
+      padding: 30px;
+
+      text-align: center;
+    }
+
+    .tour-card h3 {
+      font-size: 25px;
       margin-bottom: 15px;
     }
 
-    .tour-box p {
-      line-height: 1.8;
+    .tour-card p {
+      margin-bottom: 20px;
     }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* CONTACT */
 
     .contact {
       text-align: center;
@@ -257,23 +239,28 @@
     }
 
     .contact p {
-      margin-bottom: 25px;
       color: #666;
+      margin-bottom: 25px;
     }
+
+    /* FOOTER */
 
     footer {
       background: #111;
       color: white;
       text-align: center;
-      padding: 25px;
+      padding: 30px 20px;
     }
 
     footer p {
-      margin: 5px;
       color: #ccc;
+      margin: 5px;
     }
 
+    /* MOBILE */
+
     @media (max-width: 800px) {
+
       .hero h1 {
         font-size: 40px;
       }
@@ -285,108 +272,303 @@
       .services {
         grid-template-columns: repeat(2, 1fr);
       }
+
     }
 
-    @media (max-width: 500px) {
-      .services {
-        grid-template-columns: 1fr;
+    @media (max-width: 550px) {
+
+      nav {
+        padding: 15px;
+      }
+
+      .logo {
+        font-size: 16px;
+      }
+
+      .menu {
+        gap: 10px;
+      }
+
+      .menu a {
+        font-size: 11px;
       }
 
       .hero h1 {
         font-size: 34px;
       }
+
+      .services {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+
     }
+
   </style>
 </head>
 
 <body>
 
-  <div class="hero">
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <div class="logo">
+      ALI BALI TRANS
+    </div>
+
+    <div class="menu">
+
+      <a href="#home">Home</a>
+
+      <a href="#services">Services</a>
+
+      <a href="#tours">Tours</a>
+
+      <a href="#contact">Contact</a>
+
+    </div>
+
+  </nav>
+
+
+  <!-- HERO -->
+
+  <div class="hero" id="home">
+
     <div class="hero-content">
+
       <h1>ALI BALI TRANS</h1>
-      <p>Explore Bali with a Private Driver & Local Tour Guide</p>
-      <a class="button" href="https://wa.me/6285735531291">
+
+      <p>
+        Explore Bali with a Private Driver & Local Tour Guide
+      </p>
+
+      <a
+        class="whatsapp-button"
+        href="https://wa.me/6285735531291"
+      >
         📱 BOOK VIA WHATSAPP
       </a>
+
     </div>
+
   </div>
 
-  <section>
-    <div class="title">
+
+  <!-- SERVICES -->
+
+  <section id="services">
+
+    <div class="section-title">
+
       <h2>Our Services</h2>
-      <p>Everything you need for an amazing Bali experience</p>
+
+      <p>
+        Everything you need for an amazing Bali experience
+      </p>
+
     </div>
+
 
     <div class="services">
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80" alt="Private Tour">
-        <h3>Private Tour</h3>
-        <p>Enjoy Bali comfortably with your own private driver.</p>
-      </div>
+
+      <!-- PRIVATE TOUR -->
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80" alt="Airport Transfer">
-        <h3>Airport Transfer</h3>
-        <p>Easy and comfortable transportation from Bali Airport.</p>
+
+        <img
+          src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80"
+          alt="Private Bali Tour"
+        >
+
+        <h3>🚐 Private Tour</h3>
+
+        <p>
+          Explore Bali comfortably with your own private driver.
+        </p>
+
+        <a
+          class="book-button"
+          href="https://wa.me/6285735531291"
+        >
+          BOOK NOW
+        </a>
+
       </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="Bali Tours">
-        <h3>Bali Tours</h3>
-        <p>Discover temples, waterfalls, rice terraces and beautiful beaches.</p>
-      </div>
+
+      <!-- AIRPORT TRANSFER -->
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80" alt="Car Rental">
-        <h3>Car Rental</h3>
-        <p>Reliable transportation for your Bali holiday.</p>
+
+        <img
+          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80"
+          alt="Bali Airport Transfer"
+        >
+
+        <h3>✈️ Airport Transfer</h3>
+
+        <p>
+          Safe and comfortable transfer from Bali Airport.
+        </p>
+
+        <a
+          class="book-button"
+          href="https://wa.me/6285735531291"
+        >
+          BOOK NOW
+        </a>
+
+      </div>
+
+
+      <!-- BALI TOURS -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+          alt="Bali Tours"
+        >
+
+        <h3>🌴 Bali Tours</h3>
+
+        <p>
+          Discover temples, waterfalls, rice terraces and beaches.
+        </p>
+
+        <a
+          class="book-button"
+          href="https://wa.me/6285735531291"
+        >
+          BOOK NOW
+        </a>
+
+      </div>
+
+
+      <!-- CAR RENTAL -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80"
+          alt="Bali Car Rental"
+        >
+
+        <h3>🚗 Car Rental</h3>
+
+        <p>
+          Reliable transportation for your Bali holiday.
+        </p>
+
+        <a
+          class="book-button"
+          href="https://wa.me/6285735531291"
+        >
+          BOOK NOW
+        </a>
+
       </div>
 
     </div>
+
   </section>
 
-  <section class="tour">
+
+  <!-- UBUD TOUR -->
+
+  <section class="tour-section" id="tours">
+
     <div class="tour-content">
 
-      <div class="title">
+      <div class="section-title">
+
         <h2>Popular Bali Tour</h2>
-        <p style="color:#ddd;">Discover the beauty of Bali in one day</p>
+
+        <p>
+          Discover the beauty of Bali in one day
+        </p>
+
       </div>
 
-      <div class="tour-box">
-        <h3>🌿 Ubud Full Day Tour</h3>
+
+      <div class="tour-card">
+
+        <h3>
+          🌿 Ubud Full Day Tour
+        </h3>
+
         <p>
           Explore Tirta Empul Temple, beautiful waterfalls,
           rice terraces, Monkey Forest and Ubud Market.
         </p>
-        <br>
-        <strong>⏱️ 10–12 Hours</strong>
-        <br>
-        <strong>💰 Starting from $40</strong>
+
+        <div class="price">
+          💰 Starting from $40
+        </div>
+
+        <p>
+          ⏱️ 10–12 Hours
+        </p>
+
+        <a
+          class="book-button"
+          href="https://wa.me/6285735531291"
+        >
+          BOOK THIS TOUR
+        </a>
+
       </div>
 
     </div>
+
   </section>
 
-  <section class="contact">
 
-    <h2>Ready to Explore Bali?</h2>
+  <!-- CONTACT -->
+
+  <section class="contact" id="contact">
+
+    <h2>
+      Ready to Explore Bali?
+    </h2>
 
     <p>
       Contact Ali Bali Trans and let's plan your Bali adventure.
     </p>
 
-    <a class="button" href="https://wa.me/6285735531291">
+    <a
+      class="whatsapp-button"
+      href="https://wa.me/6285735531291"
+    >
       💬 CONTACT US
     </a>
 
   </section>
 
+
+  <!-- FOOTER -->
+
   <footer>
-    <p><strong>ALI BALI TRANS</strong></p>
-    <p>Bali Tour & Transportation</p>
-    <p>© 2026 Ali Bali Trans. All Rights Reserved.</p>
+
+    <p>
+      <strong>ALI BALI TRANS</strong>
+    </p>
+
+    <p>
+      Bali Tour & Transportation
+    </p>
+
+    <p>
+      © 2026 Ali Bali Trans. All Rights Reserved.
+    </p>
+
   </footer>
 
 </body>
