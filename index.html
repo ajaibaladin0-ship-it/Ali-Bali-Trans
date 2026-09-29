@@ -6,7 +6,58 @@
 
   <title>Ali Bali Trans | Bali Tour & Transportation</title>
 
-  <style>
+  <style>nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.75);
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #25D366;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+}
     * {
       margin: 0;
       padding: 0;
@@ -14,7 +65,16 @@
       font-family: Arial, sans-serif;
     }
 
-    body {
+    body<nav>
+  <div class="logo">ALI BALI TRANS</div>
+
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#tours">Tours</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav> {
       background: #f7f7f7;
       color: #222;
     }
